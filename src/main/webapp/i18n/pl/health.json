@@ -1,0 +1,20 @@
+{
+    "health": {
+        "title": "Heath checks",
+        "refresh.button": "Odśwież",
+        "stacktrace": "Stos wywołań",
+        "indicator": {
+            "diskSpace": "Disk space",
+            "mail": "Email",
+            "db": "Baza danych"
+        },
+        "table": {
+            "service": "Nazwa usługi",
+            "status": "Status"
+        },
+        "status": {
+            "UP": "DOSTĘPNE",
+            "DOWN": "NIE DZIAŁAJĄCY"
+        }
+    }
+}
