@@ -41,7 +41,9 @@ public class EntityManagerConfiguration  {
         properties.put("hibernate.generate_statistics", "true");
 
         properties.put("hibernate.tenant_identifier_resolver", "com.mycompany.myapp.tenancy.hibernate.MyCurrentTenantIdentifierResolver");
+        /* MANY DATASOURCES. WORKING SOLUTION */
         //properties.put("hibernate.multi_tenant_connection_provider", "com.mycompany.myapp.tenancy.hibernate.MyMultiTenantConnectionProviderImpl");
+        /*SCHEMA CONFIG THAT IS NOT WORKING*/
         properties.put("hibernate.multi_tenant_connection_provider", "com.mycompany.myapp.tenancy.hibernate.SchemaMultiTenantConnectionProviderImpl");
         properties.put("hibernate.multiTenancy", "SCHEMA");
 
