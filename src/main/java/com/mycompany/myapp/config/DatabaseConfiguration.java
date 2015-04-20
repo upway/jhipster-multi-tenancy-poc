@@ -38,7 +38,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 @Configuration
-@EnableJpaRepositories(basePackages  = {"com.mycompany.myapp.repository","com.mycompany.myapp.tenancy.repository"},entityManagerFactoryRef = "entityManagerFactory",transactionManagerRef = "transactionManager")
+@EnableJpaRepositories(basePackages  = {"com.mycompany.myapp.repository"},entityManagerFactoryRef = "entityManagerFactory",transactionManagerRef = "transactionManager")
 @EnableJpaAuditing(auditorAwareRef = "springSecurityAuditorAware")
 //@EnableTransactionManagement()
 //@EnableAutoConfiguration(exclude = HibernateJpaAutoConfiguration.class)
